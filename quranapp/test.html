@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-vedio">
+        <div class="vedio">
+            <video src="video/7318806-sd_360_640_30fps.mp4" class="vedio-player"></video>
+            <div class="footer">
+                <div class="footer-text">
+                    <h3>Ahmed Yosef</h3>
+                    <p class="description">Welcome To My App</p>
+                    <div class="img-marq">
+                        <img src="images/uparrow_arriba_1538.webp" alt="">
+                        <marquee>Hello World To My Apps New Best</marquee>
+                    </div>
+                </div>
+                <img src="images/vinyl_music_player_icon_123865.webp" class="image-play">
+            </div>
+        </div>
+
+
+
+        <div class="vedio">
+            <video src="video/8165467-sd_640_360_25fps.mp4" class="vedio-player"></video>
+            <div class="footer">
+                <div class="footer-text">
+                    <h3>Ahmed Yosef</h3>
+                    <p class="description">Welcome To My App</p>
+                    <div class="img-marq">
+                        <img src="images/uparrow_arriba_1538.webp" alt="">
+                        <marquee>Hello World To My Apps New Best</marquee>
+                    </div>
+                </div>
+                <img src="images/vinyl_music_player_icon_123865.webp" class="image-play">
+            </div>
+        </div>
+
+
+
+        <div class="vedio">
+            <video src="video/8165553-sd_360_640_25fps.mp4" class="vedio-player"></video>
+            <div class="footer">
+                <div class="footer-text">
+                    <h3>Ahmed Yosef</h3>
+                    <p class="description">Welcome To My App</p>
+                    <div class="img-marq">
+                        <img src="images/uparrow_arriba_1538.webp" alt="">
+                        <marquee>Hello World To My Apps New Best</marquee>
+                    </div>
+                </div>
+                <img src="images/vinyl_music_player_icon_123865.webp" class="image-play">
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const vedios = document.querySelectorAll('video');
+        for(const viedo of vedios){
+            viedo.addEventListener('click',function(){
+                if (viedo.paused) {
+                    viedo.play();  
+                }
+                else{
+                    viedo.pause();
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
